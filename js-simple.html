@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+    <form method="get" action="code.php">
+        <h2> Inscrivez-vous </h2>
+        <div>
+            <label for="name"> Nom : </label>
+            <input id="name" name="name" required/>
+        </div>
+        <div>
+            <label for="pwd1"> Mot de passe : </label>
+            <input type="password" id="psw1" name="password" oninput="checkPasswords()"/>
+        </div>
+        <div>
+            <label for="pwd2"> Confirmation mot de passe :</label>
+            <input type="password" id="psw2" oninput="checkPasswords()"/>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Effacer</button>
+        </div>
+    </form>
+    
+    <!-- Relier mon fichier javascript avec mon fichier HTML -->
+    <script type="text/javascript" src="mesFonction.js"></script>
+</body>
+</html>

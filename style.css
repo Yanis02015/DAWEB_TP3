@@ -1,0 +1,9 @@
+/* input rouge */
+.phaseErronee{
+    border-color: red;
+}
+
+/* input vert */
+.phaseCorrecte{
+    border-color: green;
+}
